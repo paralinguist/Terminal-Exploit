@@ -1,0 +1,23 @@
+[gd_resource type="Theme" load_steps=5 format=2]
+
+[ext_resource path="res://fonts/DS-TERM.TTF" type="DynamicFontData" id=1]
+[ext_resource path="res://themes/terminal_font.tres" type="DynamicFont" id=2]
+[ext_resource path="res://themes/terminal_background.tres" type="StyleBox" id=3]
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 1 )
+
+[resource]
+/fonts/term_font = SubResource( 3 )
+HBoxContainer/styles/terminal_background = ExtResource( 3 )
+Label/colors/font_color = Color( 0.113725, 0.756863, 0.27451, 1 )
+Label/colors/font_color_shadow = Color( 0, 0, 0, 0 )
+Label/colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+Label/constants/line_spacing = 3
+Label/constants/shadow_as_outline = 0
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/fonts/terminal_font = ExtResource( 2 )
+Label/styles/terminal_panel = ExtResource( 3 )
+Panel/styles/terminal_background = ExtResource( 3 )
+VBoxContainer/styles/terminal_background = ExtResource( 3 )
